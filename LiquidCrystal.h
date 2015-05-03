@@ -75,7 +75,7 @@ uint8_t _displayfunction;
 #define LCD_DISPLAYON 0x04
 #define LCD_CURSOROFF 0x00
 #define LCD_BLINKOFF 0x00
-#define LCD_BLINKON 0x01	// 游標開啟閃耀
+#define LCD_BLINKON 0x01
 #define LCD_ENTRYMODESET 0x04
 #define LCD_ENTRYLEFT 0x02
 #define LCD_ENTRYSHIFTDECREMENT 0x00
