@@ -1,4 +1,4 @@
-## LiquidCrystal for Atmel AVR(Atmega) Microcontroller (AVR-LiquidCrystal) ##
+## LiquidCrystal for Atmel AVR(Atmega) Microcontroller (AVR-LiquidCrystal、AVR-LCM) ##
 
 [LiquidCrystal](https://github.com/arduino/Arduino/tree/master/libraries/LiquidCrystal) 原先是 Arduino 中用於控制 LCM 的內建 Library，去年需要將其移植為 Atmel AVR(Atmega) 可使用的 Library。
 
