@@ -16,9 +16,9 @@ AVR-LiquidCrystal 主要為 LiquidCrystal.h/LiquidCrystal.c 兩個檔案，針�
 
 ```
 
-\#define \_rs\_pin\_px 1	// rs pin 在 PORTX 的腳位
-\#define \_rw\_pin\_px 3	// rw pin 在 PORTX 的腳位
-\#define \_enable\_pin\_px 5	// enable pin 在 PORTX 的腳位
+#define _rs_pin_px 1
+#define _rw_pin_px 3
+#define _enable_pin_px 5
 
 ```
 
@@ -26,9 +26,9 @@ AVR-LiquidCrystal 主要為 LiquidCrystal.h/LiquidCrystal.c 兩個檔案，針�
 
 ```
 
-\#define \_rs\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rs\_pin\_px)) : (PORTD &= BITLOW(\_rs\_pin\_px)))	// 對 rs pin 輸出 HIGH(高) / LOW(低) 電位
-\#define \_rw\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rw\_pin\_px)) : (PORTD &= BITLOW(\_rw\_pin\_px)))	// 對 rw pin 輸出 HIGH(高) / LOW(低) 電位
-\#define \_enable\_pin(N) ((N) ? (PORTD |= BITHIGH(\_enable\_pin\_px)) : (PORTD &= BITLOW(\_enable\_pin\_px)))	// 對 enable pin 輸出 HIGH(高) / LOW(低) 電位
+#define _rs_pin(N) ((N) ? (PORTD |= BITHIGH(_rs_pin_px)) : (PORTD &= BITLOW(_rs_pin_px)))
+#define _rw_pin(N) ((N) ? (PORTD |= BITHIGH(_rw_pin_px)) : (PORTD &= BITLOW(_rw_pin_px)))
+#define _enable_pin(N) ((N) ? (PORTD |= BITHIGH(_enable_pin_px)) : (PORTD &= BITLOW(_enable_pin_px)))
 
 ```
 
