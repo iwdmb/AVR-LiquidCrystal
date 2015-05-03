@@ -14,15 +14,15 @@ AVR-LiquidCrystal 主要為 LiquidCrystal.h/LiquidCrystal.c 兩個檔案，針�
 
 \_rs\_pin\_pd / \_rw\_pin\_pd / \_enable\_pin\_pd 分別代表 rs/rw/enable PIN 在 PORTX 的腳位 (X 可能等於 A/B/C/D，依使用者電路而定義)，針對腳位的不同，修改後面的數字。
 
-#define \_rs\_pin\_px 1	// rs pin 在 PORTX 的腳位
-#define \_rw\_pin\_px 3	// rw pin 在 PORTX 的腳位
-#define \_enable\_pin\_px 5	// enable pin 在 PORTX 的腳位
+\#define \_rs\_pin\_px 1	// rs pin 在 PORTX 的腳位
+\#define \_rw\_pin\_px 3	// rw pin 在 PORTX 的腳位
+\#define \_enable\_pin\_px 5	// enable pin 在 PORTX 的腳位
 
 而 \_rs\_pin / \_rw\_pin / \_enable\_pin 是為了實現對 rs/rw/enable PIN 做電位輸出而定義的，預設是假定 LCM rs/rw/enable PIN 接在 PORTD，如果是接在其它排，請將下面的 PORTD 替換成符合你電路設計的名稱。
 
-#define \_rs\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rs\_pin\_px)) : (PORTD &= BITLOW(\_rs\_pin\_px)))	// 對 rs pin 輸出 HIGH(高) / LOW(低) 電位
-#define \_rw\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rw\_pin\_px)) : (PORTD &= BITLOW(\_rw\_pin\_px)))	// 對 rw pin 輸出 HIGH(高) / LOW(低) 電位
-#define \_enable\_pin(N) ((N) ? (PORTD |= BITHIGH(\_enable\_pin\_px)) : (PORTD &= BITLOW(\_enable\_pin\_px)))	// 對 enable pin 輸出 HIGH(高) / LOW(低) 電位
+\#define \_rs\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rs\_pin\_px)) : (PORTD &= BITLOW(\_rs\_pin\_px)))	// 對 rs pin 輸出 HIGH(高) / LOW(低) 電位
+\#define \_rw\_pin(N) ((N) ? (PORTD |= BITHIGH(\_rw\_pin\_px)) : (PORTD &= BITLOW(\_rw\_pin\_px)))	// 對 rw pin 輸出 HIGH(高) / LOW(低) 電位
+\#define \_enable\_pin(N) ((N) ? (PORTD |= BITHIGH(\_enable\_pin\_px)) : (PORTD &= BITLOW(\_enable\_pin\_px)))	// 對 enable pin 輸出 HIGH(高) / LOW(低) 電位
 
 ### LiquidCrystal.c ###
 
