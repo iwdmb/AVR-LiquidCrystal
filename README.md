@@ -57,8 +57,8 @@ _data_pin 是一個 function 用於對 data 腳位做輸出，AVR-LiquidCrystal 
 
 ### Download ###
 
-+ [CalcCreateChar](http://bit.ly/1GFB7f4)
-+ [GetStringLength](http://bit.ly/1GQGFc1)
++ [CalcCreateChar](https://github.com/iwdmb/AVR-LiquidCrystal/releases/download/0.0.1/CalcCreateChar.zip)
++ [GetStringLength](https://github.com/iwdmb/AVR-LiquidCrystal/releases/download/0.0.1/GetStringLength.zip)
 
 ## License ##
 
